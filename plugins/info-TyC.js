@@ -1,16 +1,33 @@
+let handler = async (m, { conn }) => {
+m.reply(global.terminos)}
+handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|privacidad|الاستخدام|الخصوصيه|الخصوصية|الخصوصيه ولا الاستخدام|شروط الخصوصية|شروط الخصوصيه|شروط الاستخدام/i
+handler.command = new RegExp
+export default handler
 
-const handler = async (m, {conn}) => {
-  const datas = global
-   const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
-   const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
-   const tradutor = _translate.plugins.info_tyc
-   
-   global.terminos = tradutor.texto1;
+global.terminos = `
+*❈↲ الجهل بما هو مذكور هنا يعفي مالك الروبوت أو الروبوت الفرعي أو مستخدم الروبوت من العقوبات التي قد تنشأ عن ذلك❗*
 
-  m.reply(global.terminos);
-};
-handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i;
-handler.command = new RegExp;
-export default handler;
+----------------
+*⚠️ شروط الخصوصية*
+❈↲ لا تتم مشاركة المعلومات التي يتلقاها البوت مع أي طرف ثالث أو مع أي شخص آخر
+❈↲ لا يتم مشاركة الصور / مقاطع الفيديو / الملصق / الصوتيات / إلخ مع أي شخص
+❈↲ لا يتم مشاركة رقم هاتفك مع أي شخص
+❈↲ يتم حذف بيانات البطاقة والمواقع والعناوين وما إلى ذلك على الفور ولا تتم مشاركتها مع أي شخص
+❈↲ يتم حذف جميع المحادثات من وقت لآخر ولا يتم عمل نسخة احتياطية (غير محفوظة) لأي نوع من المعلومات / المحادثات
 
+----------------
+*⚠️ شروط الاستخدام*
+❈↲ غير مسئول عن سوء استخدام البوت
+❈↲ غير مسئول عن الجهل او استخدام البوت
+❈↲ البوت مش شغال 24 ساعه طالما المالك مقررش 
+❈↲ انا لست مسئول عن الي ارقام تذهب الى دعم البوت
+❈↲ الصوتيات / الملاحظات الصوتية / الصور / مقاطع الفيديو أو أي ملفات وسائط متعددة أخرى للبوت هي مش مع حد إذا تم اكتشاف بوت آخر مع واحد أو أكثر من ملفات الوسائط المتعددة المذكورة أعلاه ، فسيتم أخذها رسائل في الموضوع.
 
+❈↲  ذا تلقيت في أي وقت رسالة من رقم البوت ولم يكن ذلك أمرًا ، فقد يكون من مالك البوت أو صاحب الرقم ، فهذا شخص حقيقي يرجي احترامه 
+
+----------------
+
+❈↲ *⁉️ لو عندك شك علي اي حاجه كلم المطور*
+❈↲ لو عندك اي اسئلة او شك من حاجه معينه كلم المطور وان شاء الله هيرد ف ي اقرب وقت ممكن_ 
+❈↲روابط المطور
+اختصار الروابط :
